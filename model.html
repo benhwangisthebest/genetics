@@ -1,0 +1,165 @@
+{{THIS-China/CSS}}{{THIS-China/CSS2}}{{THIS-China/Header}}
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Design</title>
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="mywrapper">
+      
+      <div id="top-pic-wrapper"><img src="https://2021.igem.org/wiki/images/f/f1/T--THIS-China--MAINLOGO.jpg" alt="fork me"></div>
+      <div id="content-wrapper">
+        <div id="mycontent-noside">
+          <h3>Motivation</h3>
+            <div class="text">
+              <br><font size="+1">In our project we use enzyme kinetics to suggest improvements to our experimentation. Specifically, we model the color degradation of the IPTG-induced cotA gene, compare it to the non-induced group, and use the results to derive the optimal time at which our experiment functions. <br><br>
+
+</font>
+            </div>
+<br>
+            <h3>Theoretical Background</h3>
+            <div class="text">
+              <br><font size="+1">In general, for a reaction of any order n, it is well-established that the differential rate law is as follows: 
+	-d[A]/dt=k[A]^n	(1)
+
+where [A] represents the concentration (typically determined through measuring absorbance) and k represents the rate constant. 
+Substituting n=1 into Eq. 1, we can see that plotting ln[A] vs t will yield a linear plot with slope -k. By the same method, for a reaction of second-order (n=2), plotting 1/[A] vs t yields a linear graph with slope k, and for a third-order reaction where n=3, plotting 1/[A]^2 vs t should also yield a linear plot with slope k. With this information, we next model the data that we collected and determine its differential rate law. 
+
+</font>
+            </div><br>
+            <h3>Data</h3>
+            <div class="text">
+              <br><font size="+1">The data we collected consists of the optical density (OD; hereafter absorbance) for the induced and non-induced groups. The spectrophotometer used, Unchained Labs Little Lunatic, has an accuracy of ±1.5% for absorbance values above 2 and ±0.03 OD for values less than 2. In our experiment, the absorbance reading is only greater than 2 in the beginning, and once significant degradation occurs the value decreases to below 2. As we are mostly interested in the portion of the data after significant degradation has occurred, this error is negligible and can be ignored in our modeling. 
+</font>
+            </div><br>
+<h3>Data</h3>
+            <div class="text">
+              <br><font size="+1">The data we collected consists of the optical density (OD; hereafter absorbance) for the induced and non-induced groups. The spectrophotometer used, Unchained Labs Little Lunatic, has an accuracy of ±1.5% for absorbance values above 2 and ±0.03 OD for values less than 2. In our experiment, the absorbance reading is only greater than 2 in the beginning, and once significant degradation occurs the value decreases to below 2. As we are mostly interested in the portion of the data after significant degradation has occurred, this error is negligible and can be ignored in our modeling. 
+</font>
+            </div><br>
+<h3>Non-induced Model</h3>
+            <div class="text">
+              <br><font size="+1">First, we mathematically model the non-IPTG-induced group of the cotA gene. Since there is no inducer, the rate of degradation is expected to be constant over time (i.e., the reaction is of zeroth order, with n=0). The graph below compares the degradation of the non-IPTG-induced group to the IPTG-induced group. The mostly linear graph of the non-IPTG-induced group (blue line) agrees with our expectation. 
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/9/92/T--THIS-China--3Picture1.png" class="center" style="">
+                <p><b>Figure 1:</b>This is a picture</p>
+            </div>
+            </div><br>
+Applying a linear trendline fit to the data, we obtain: 
+[A]=-0.0149t+2.0255
+This tells us that the rate constant k is 0.0149. 
+
+</font>
+            </div><br>
+<h3>Induced Modelling</h3>
+            <div class="text">
+              <br><font size="+1">We next mathematically model the color degradation of IPTG-induced cotA gene by first determining its reaction order and then calculating its rate constant. From the figure above, the effects of the induction are clear. 
+Taking the data values, we first apply the transformations for first-, second-, and third-order, respectively. These values are presented in the following table. 
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/4/4d/T--THIS-China--3Picture2.png" class="center" style="">
+                <p><b>Figure 2:</b>This is a picture</p>
+            </div>
+            </div><br>
+Graphing each of these sets of values over time, fitting each set of points with a linear line, and plotting the residuals, it is clear that the reaction is second-order. The R^2 value is the highest for the trendline corresponding to second-order. Furthermore, the residuals have the smallest magnitude. 
+</font>
+            </div><br>
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/a/ad/T--THIS-China--3Picture3.png" class="center" style="">
+                <p><b>Figure 3:</b>This is a picture</p>
+            </div>
+            </div><br>
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/1/19/T--THIS-China--3Picture4.png" class="center" style="">
+                <p><b>Figure 4:</b>This is a picture</p>
+            </div>
+            </div><br>
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/3/3e/T--THIS-China--3Picture5.png" class="center" style="">
+                <p><b>Figure 5:</b>This is a picture</p>
+            </div>
+            </div><br>
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/0/04/T--THIS-China--3Picture6.png" class="center" style="">
+                <p><b>Figure 6:</b>This is a picture</p>
+            </div>
+            </div><br>
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/6/67/T--THIS-China--3Picture9.png" class="center" style="">
+                <p><b>Figure 7:</b>This is a picture</p>
+            </div>
+            </div><br>
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/5/5f/T--THIS-China--3Picture10.png" class="center" style="">
+                <p><b>Figure 8:</b>This is a picture</p>
+            </div>
+            </div><br>
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/e/e9/T--THIS-China--3Picture11.png" class="center" style="">
+                <p><b>Figure 9:</b>This is a picture</p>
+            </div>
+            </div><br>
+
+<div class="text"><font size="+1">Therefore, we obtain the integrated rate law that models the absorbance over time of the IPTG-induced cotA gene: 
+1/[A+] =0.1158t+0.2062
+The rate constant is equivalent to the slope of the graph. The units of the rate constant are also known given that the process is second-order. Finally, the value 0.2062 is equivalent to 1/[A_0+], where [A_0+] is the absorbance at time t=0: 
+k=0.1158 M^(-1) s^(-1)
+1/[A_0+]=0.2062  M^(-1)
+Isolating [A+] and plotting the resulting equation allows us to compare the modeled and measured values (see below). 
+[A+]=1/(0.1158t+0.2062) </font>
+</div><br>
+<h3>Impact on Experimentation</h3>
+            <div class="text">
+              <br><font size="+1">Given that the natural, non-induced degradation of cotA can be modeled through a zeroth-order rate law and that the induced degradation can be modeled through a second-order rate law, we can now determine the shortest time after which degradation can be conclusively said to exist, as well as the optimal time at which measurement should take place. The figure below shows the two modeled equations. 
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/a/ab/T--THIS-China--3Picture12.png" class="center" style="">
+                <p><b>Figure 10:</b>This is a picture</p>
+            </div>
+            </div><br>
+It is easy to see that these two graphs intersect at roughly around 3 hours (the exact intersection is calculated to be 2.565 hours), which means that the two groups have the same optical density at this time (with the absorbance reading being 1.987). After this time, the absorbance of the IPTG-induced group decreases more rapidly than the non-induced group, as expected. 
+The following graph displays the absolute difference between the two groups. 
+
+<div class="text">
+              <div class="figure-wrapper">
+                <img src="https://2021.igem.org/wiki/images/a/a4/T--THIS-China--3Picture13.png" class="center" style="">
+                <p><b>Figure 11:</b>This is a picture</p>
+            </div>
+            </div><br>
+Therefore, there should be a measurable difference between the induced and non-induced group after merely 154 minutes. 
+However, this is the shortest time after which degradation can be detected, not the optimal time. For best results, we should take the measurements when the absolute difference is the greatest. This optimal time is marked in the graph above. Calculations show that this corresponds to t=22.294 hours, at which time the absolute difference in optical density is 1.33. Rounding for convenience, 24 hours is the optimal time after which we should make our measurement. 
+</font>
+</div><br>
+<h3>Discussion</h3>
+            <div class="text">
+              <br><font size="+1">Note that, throughout our experiment, we have only used four data points, taken over a 48-hour period. Due to the difficulty involved with repeatedly sampling the absorbance, this number is relatively low. As a consequence, the model we present here are not as accurate as possible. For future experiments, collecting more data points will improve the accuracy. 
+        </div>
+      </div>
+    </div>
+  </body>
+
+</p>
+
+</div>		            <div class="visualClear"></div>
+	            </div>
+		    </div>
+
+        </div>
+    </div>
+</html>
